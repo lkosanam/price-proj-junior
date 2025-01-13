@@ -1,0 +1,68 @@
+.vt323-regular {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.levels-page {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: #616197;
+    background-image: url("../images/levelsbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    image-rendering: pixelated;
+}
+
+.elevator {
+    position: absolute;
+    width: 132px;
+    height: 540px;
+    margin-top: -10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.player {
+    position: absolute;
+    width: 42px;
+    height: 84px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    z-index: 100000;
+}
+
+.room {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex; /* Use flexbox for content alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Align text within the box */
+    padding: 5px; /* Add padding to prevent text from touching edges */
+    cursor: pointer;
+    border-radius: 50px 50px 0 0; /* Curved top, flat bottom */
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden; /* Prevent text overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.room:hover {
+    transform: scale(1.1);
+}
+
+.room span {
+    display: block; /* Allow for multi-line text */
+    word-wrap: break-word; /* Ensure long words break to fit the box */
+    font-size: 12px; /* Adjust font size for readability */
+}

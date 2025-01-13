@@ -1,0 +1,53 @@
+.general-container {
+    display: flex;
+    flex-direction: column; /* Stack title and elevator-page vertically */
+    align-items: center;
+    margin: 0;
+    background-image: url('../images/elevator buttons.png'); /* Replace with your actual background image path */
+    background-size: contain; /* Maintain aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    height: auto;
+    width: 300%;
+}
+
+.title {
+    margin-top: 2rem; /* Add space at the top */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: transparent;
+}
+
+.elevator-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -2rem; /* Adjust spacing from the title */
+}
+
+.elevatorButton {
+    margin: 10px;
+    padding: 20px 30px;
+    font-size: 24px; /* Make buttons bigger */
+    background-color: #a88148;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 3rem;
+}
+
+.elevatorButton:hover {
+    background-color: #4d4d80;
+}
+
+/* Elevator image styling */
+.elevator-image {
+    width: 300px; /* Adjust this for a larger size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some spacing */
+}
